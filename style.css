@@ -5,17 +5,32 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+}
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 .container {
     width: 1079px;
     margin: 0 auto;
 }
+
 .header {
     background: #4b73b5;
     color: #fff;
     margin-bottom: 13px;
 }
+
 
 .header__container {
     position: relative;
@@ -50,17 +65,26 @@ body {
     color: #fff
 
 }
-ul {
-    padding: 0;
-    margin: 0;
-}
 
-ul li {
-    list-style: none;
-}
+
+
 
 .page-content {
-    width: 890px;
+    width: 82%;
+}
+
+.sidebar {
+    width: 17%;
+}
+
+.benefits__preview {
+    position: relative;
+}
+
+.sidebar, 
+.page-content {
+    display: inline;
+    vertical-align: top;
 }
 
 .benefits__title {
@@ -160,20 +184,116 @@ text-align: justify;
 }
 
 
-.sidebar {
-    margin-right: 120px;
-}
 
-
-
-img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-.sidebar, .page-content {
+.nav__icon,
+.nav__title {
     display: inline-block;
     vertical-align: top;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+.nav__icon {
+    width: 24px;
+    height: 18px;
+    background: center center no-repeat
+}
+ .nav__icon--direction {
+     background-image: url('./img/main_icon1.png');
+ }
+
+ .nav__icon--feed {
+     background-image: url('./img/feed_icon.png');
+ }
+.nav__icon--plain {
+    background-image: url('./img/team_icon.png');
+}
+
+.nav__link:hover .nav__icon--direction {
+    background-image: url('./img/main_icon.png');
+}
+
+.nav__link:hover .nav__icon--feed {
+    background-image: url('./img/feed_icon.png');
+}
+
+.nav__link:hover .nav__icon--plain {
+    background-image: url('./img/team_icon1.png');
+}
+
+.nav__link:hover .nav__title {
+    color: #212121;
+}
+
+
+.nav__title {
+width: 67px;
+height: 9px;
+color:  #4b73b5;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 700;
+line-height: 54px;
+text-transform: uppercase;
+letter-spacing: 2.4px;
+}
+
+.nav__icon, .nav__title{
+display: inline-block;
+vertical-align: top;
+}
+
+
+.sidebar {
+    margin-right: 120px;
+   
+}
+
+
+
+
+.paginations_pages_items {
+    display: inline;
+}
+.pagination {
+    display: flex;  
+    justify-content: 
+    space-around; 
+}
+ .sosials_list-item {
+     display: inline-block;
+     vertical-align: middle;
+ }
+
+.footer {
+    background: #4b73b5;
+    color: #fff;
+}
+
+.footer__container {
+    position: relative;
+    height: 77px;
+}
+
+.author {
+    width: 236px;
+height: 50px;
+color: #ffffff;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+
+}
+
+
+
+.footer .logo {
+   display: inline-block;
+   position: absolute;
+   left: 1882px;
+   top: 490px;
+
 }

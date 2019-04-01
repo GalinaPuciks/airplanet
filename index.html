@@ -25,30 +25,35 @@
             <div class="container">
             <div class="sidebar">
                     <ul class="nav">
-                        <li class="nav__item">
-                            <div class="nav__icon">
-                                <img src="./img/main_icon.png" class="nav__icon-pics" alt="">
+                        <li class="nav__item nav__item--active">
+                            <a href="#" class="nav__link">
+                            <div class="nav__icon nav__icon--direction">
                             </div>
                             <div class="nav__title">
                                 Главная
                             </div>
+                        </a>
                         </li>
                         <li class="nav__item">
-                            <div class="nav__icon">
-                                <img src="./img/feed_icon.png" class="nav__icon-pics" alt="">
+                            <a href="#" class="nav__link">
+                            <div class="nav__icon nav__icon--feed">
                             </div>
-                            <div class="nav__title">
+                            <div class= "nav__title">
                                  Отзывы
-                            </div>
+                                </div>
+                        </a>  
                         </li>
                         <li class="nav__item">
-                            <div class="nav__icon">
-                                 <img src="./img/team_icon.png" class="nav__icon-pics" alt="">
+                            <a href="#" class="nav__link">
+                            <div class="nav__icon nav__icon--plain">
                             </div>
                             <div class="nav__title">
                                 Экипаж
                             </div>
+                        </a>
+                            
                         </li>
+                    </ul>
             </div>
             <div class="page-content">
                 <div class = "benefits">
@@ -101,7 +106,7 @@
                     </div>
                 </div>
                 <div class="news">
-                    <div class="container">
+                  
                     <p class="news_title"> Последние новости </p>
                         <ul class="news__list">
                             <li class="news__items">
@@ -142,7 +147,7 @@
 
                             </li>
                         </ul>
-                    </div>
+                    
 
                    
                 </div>
@@ -180,33 +185,34 @@
             </div>
             </div>
         </div>
-        <div class="footer">
+        <footer class="footer">
+            
             <div class="author">
                 <p class="author_text">Сделано с любовью и старанием
                         на курсе «HTML + CSS» в LoftSchool.
                         Автор работы: <strong> Прохладов Вадим </strong> </p>
             </div>
             <a href="#" class="logo">
-            <img class ="logo__picture" src="" alt="">
+            <img class ="logo__picture" src="./img/Vector_Smart_Object.png" alt="">
             </a>
             <div class="sosials">
                 <ul class="sosials_list">
-                    <li class="sosials_list_vk">
+                    <li class="sosials_list-item">
                         <a href="#" class="sosials_vk_link">
                             <img src="" class="sosials_vk-icon" alt="">
                         </a>
                     </li>
-                    <li class="sosials_list_fb">
+                    <li class="sosials_list-item">
                         <a href="#" class="sosials_fb_link">
                             <img src="" class="sosials_fb-icon" alt="">
                         </a>
                     </li>
-                    <li class="sosials_list_google">
+                    <li class="sosials_list-item">
                         <a href="#" class="sosials_google_link">
                             <img src="" class="sosials_google-icon" alt="">
                         </a>
                     </li>
-                    <li class="sosials_list_twitt">
+                    <li class="sosials_list-item">
                         <a href="#" class="sosials_twitt_link">
                             <img src="" class="sosials_twitt-icon" alt="tweetter">
                         </a>
@@ -218,8 +224,8 @@
                         </li>
                 </ul>
             </div>
-            
         </div>
+        </footer>
         
     </div>
 </body>
