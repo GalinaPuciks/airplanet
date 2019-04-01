@@ -77,13 +77,15 @@ img {
     width: 17%;
 }
 
+
+
 .benefits__preview {
     position: relative;
 }
 
 .sidebar, 
 .page-content {
-    display: inline;
+    display: inline-block;
     vertical-align: top;
 }
 
@@ -113,15 +115,12 @@ margin-bottom: 27px;
     width: 250px;
     height: 456px;
     border-radius: 5px;
-    border: 1px solid #e8e9ed;
 }
 
 .benefits__lux-price {
      width: 250px;
      height: 456px;
      border-radius: 5px;
-
-
 }
 
 .benefits__standart-price, .benefits__premium-price, .benefits__lux-price {
@@ -151,10 +150,7 @@ margin-bottom: 28px;
 
 
 }
-.benefits__standart-img, .benefits__premium-img, .benefits__lux-img {
-    padding-left: 87px;
-    padding-top: 30px;
-}
+
 
 .benefits__standart-features, .benefits__premium-features, .benefits__lux-features {
 color: #212121;
@@ -164,6 +160,9 @@ font-weight: 400;
 width: 72px;
 height: 48px;
 padding-left: 87px;
+}
+.benefits__price img {
+    display:  
 }
 
 .news_title {
@@ -176,14 +175,24 @@ line-height: 38px;
 margin-bottom: 72px;
 text-align: justify;
 }
-.news__pics {
-    width: 160px;
-    height: 160px;
+.news__pics-avatar {
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
+    margin-right: 20px
 }
 
-
+.news__items{
+	margin-bottom: 56px;
+}
+.news__pics-avatar, .news__desc{
+	display: inline-block;
+}
+.news__desc{
+	width: 640px;
+   height: 165px;
+}
 
 .nav__icon,
 .nav__title {
@@ -198,10 +207,10 @@ text-align: justify;
 .nav__icon {
     width: 24px;
     height: 18px;
-    background: center center no-repeat
+    background: center center no-repeat;
 }
  .nav__icon--direction {
-     background-image: url('./img/main_icon1.png');
+     background-image: url('./img/main_icon.png');
  }
 
  .nav__icon--feed {
@@ -212,11 +221,11 @@ text-align: justify;
 }
 
 .nav__link:hover .nav__icon--direction {
-    background-image: url('./img/main_icon.png');
+    background-image: url('./img/main_icon1.png');
 }
 
 .nav__link:hover .nav__icon--feed {
-    background-image: url('./img/feed_icon.png');
+    background-image: url('./img/feed_icon1.png');
 }
 
 .nav__link:hover .nav__icon--plain {
@@ -227,10 +236,24 @@ text-align: justify;
     color: #212121;
 }
 
+.nav__item--active .nav__icon--direction {
+    background-image: url('/img/main_icon1.png');
+}
+
+.nav__item--active .nav__icon--feed {
+    background-image: url('./img/feed_icon1.png');
+
+}
+
+.nav__item--active .nav__icon--plain {
+    background-image: url('/img/team_icon1.png');
+}
+.nav__item--active .nav__title {
+    color:black;
+}
 
 .nav__title {
-width: 67px;
-height: 9px;
+
 color:  #4b73b5;
 font-family: Roboto;
 font-size: 12px;
@@ -245,23 +268,25 @@ display: inline-block;
 vertical-align: top;
 }
 
-
-.sidebar {
-    margin-right: 120px;
-   
+.news__pics, .news__items {
+    display: inline-block;
 }
 
-
-
-
-.paginations_pages_items {
+.pagination li {
     display: inline;
 }
-.pagination {
-    display: flex;  
-    justify-content: 
-    space-around; 
+.paginations__display,
+.pagination__link {
+    display: inline-block;
+    vertical-align: middle;
 }
+.pagination__block {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+
  .sosials_list-item {
      display: inline-block;
      vertical-align: middle;
