@@ -272,18 +272,31 @@ vertical-align: top;
     display: inline-block;
 }
 
-.pagination li {
-    display: inline;
+.pagination {
+	display: inline-block
 }
-.paginations__display,
-.pagination__link {
-    display: inline-block;
-    vertical-align: middle;
+
+.pagination__display{
+	display: inline-block;
 }
-.pagination__block {
+.pagination__controlls {
+	display: inline-block;
+}
+
+.pagination__prev {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+}
+
+.pagination_pages {
+		display: inline-block;
+	}
+	
+.pagination_pages-item {
+	display: inline-block;
+}
+
+.pagination__next {
+	display: inline-block;
 }
 
 
