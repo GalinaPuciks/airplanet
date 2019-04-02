@@ -335,7 +335,35 @@ vertical-align: top;
 .pagination__next {
 	text-decoration: none
 }
+.pagination__link:hover {
+	background: #4b73b5;
+}
+.pagination__link {
+	padding: 5px;
+	color: inherit;
+	font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
 
+.pagination__display {
+color: #656464;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 21px;
+}
+
+.pagination__prev, 
+.pagination__next {
+	color:#221f1f;
+}
+
+.pagination__prev, 
+.pagination__next:hover {
+	opacity: .3
+}
 
  .footer {
     background: #4b73b5;
