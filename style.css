@@ -376,8 +376,7 @@ line-height: 21px;
 }
 
 .author {
-width: 236px;
-height: 50px;
+
 color: #ffffff;
 font-family: Roboto;
 font-size: 14px;
@@ -386,10 +385,15 @@ line-height: 18px;
 
 }
 
-.logo_footer-pic {
-	display: block;
-	margin: 0 auto;
+.author, .logo_footer, .sosials {
+	width: 33%;
+	display: inline-block;
 }
+
+.author_text {
+	text-align: left;
+}
+
 .sosials_list-item {
 	background: #d2def3;
 	margin-right: 10px;
@@ -402,13 +406,7 @@ line-height: 18px;
     vertical-align: middle;
 		
 }
-.sosials {
-	width: 20%;
-	text-align: right;
-}
-.sosials_list-item:hover {
-	background: #fff;
-}
+
 hr {
     width: 880px;
     height: 2px;
