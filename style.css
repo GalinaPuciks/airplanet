@@ -368,11 +368,14 @@ line-height: 21px;
  .footer {
     background: #4b73b5;
     color: #fff;
+    width: 100%;
+	text-align: center
 }
 
 .footer__container {
     position: relative;
     height: 77px;
+    text-align: center
 }
 
 .author {
@@ -382,16 +385,32 @@ font-family: Roboto;
 font-size: 14px;
 font-weight: 300;
 line-height: 18px;
+vertical-align: middle;
+text-align: center;
+width: 250px;
 
 }
 
-.author, .logo_footer, .sosials {
+.author,
+.logo_footer,
+.sosials {
 	width: 33%;
 	display: inline-block;
 }
 
 .author_text {
 	text-align: left;
+    vertical-align: middle;
+    width: 260px;
+}
+
+.logo_footer-pic {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sosials {
+	vertical-align: top;
 }
 
 .sosials_list-item {
