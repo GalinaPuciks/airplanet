@@ -236,11 +236,36 @@ text-align: justify;
     vertical-align: middle;
     padding: 5px;
 }
+.nav__icon {
+	vertical-align: middle;
+	padding-top: 40px;
+	margin-right: 20px;
+	
+}
+
 
 .nav__link {
     text-decoration: none;
 }
 
+.nav__link {
+    font-size: 19px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.4s ease;
+}
+
+.nav__link:before {
+  content: '';
+  background-position: center center;
+  display: inline-block;
+  height: 20px;
+  margin-right: 15px;
+  vertical-align: middle;
+  width: 20px;
+  transition: background-image 0.4s ease;
+}
 .nav__icon {
     width: 24px;
     height: 18px;
@@ -312,6 +337,9 @@ vertical-align: top;
 .pagination {    
 	width: 100%;    
 	text-align: center;
+}
+.pagination {
+	margin-bottom: 20px;
 }
 .pagination_pages-item {
 	display: inline-block;
