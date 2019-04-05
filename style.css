@@ -65,14 +65,6 @@ img {
     color: #fff
 
 }
-.sosials {
-	text-align: right;
-	vertical-align: middle;
-	
-}
-
-
-
 
 .page-content {
     width: 82%;
@@ -105,30 +97,29 @@ line-height: 38px;
 margin-bottom: 27px;
 }
 
-.benefits__standart-price, .benefits__premium-price, .benefits__lux-price {
+.benefits__standart-price, 
+.benefits__premium-price, 
+.benefits__lux-price {
     display: inline-block;
     vertical-align: top;
     padding-top: 40px;
 
 }
-.benefits__standart-price {
-    width: 250px;
-    height: 456px;
-    border-radius: 5px;
-}
-.benefits__premium-price{
-    width: 250px;
-    height: 456px;
-    border-radius: 5px;
-}
-
+.benefits__standart-price, 
+.benefits__premium-price,
 .benefits__lux-price {
-     width: 250px;
-     height: 456px;
-     border-radius: 5px;
+    width: 250px;
+    height: 456px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid#fff
 }
 
-.benefits__standart-price, .benefits__premium-price, .benefits__lux-price {
+
+
+.benefits__standart-price, 
+.benefits__premium-price, 
+.benefits__lux-price {
 width: 250px;
 height: 456px;
 color: #221f1f;
@@ -140,34 +131,30 @@ text-align: center;
 
 }
 
-.benefits__subtitle-standart,.benefits__subtitle-premium, .benefits__subtitle-lux {
-width: 68px;
-height: 8px;
-color: #212121;
-font-family: Roboto;
-font-size: 11px;
-font-weight: 700;
-line-height: 51.38px;
-text-transform: uppercase;
-letter-spacing: 2.88px;
-padding-left: 88px;
-margin-bottom: 28px;
-
-
+.benefits__subtitle-standart,
+.benefits__subtitle-premium,
+ .benefits__subtitle-lux {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 51.38px;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+    margin-bottom: 28px;   
 }
 
 
-.benefits__standart-features, .benefits__premium-features, .benefits__lux-features {
+.benefits__standart-features,
+ .benefits__premium-features, 
+ .benefits__lux-features {
 color: #212121;
 font-family: Roboto;
 font-size: 54px;
 font-weight: 400;
 width: 72px;
 height: 48px;
-padding-left: 87px;
-}
-.benefits__price img {
-    display:  
+display: inline-block;
 }
 
 .benefits__standart-price:hover {
@@ -202,6 +189,8 @@ padding-left: 87px;
 	text-align: left
 }
 
+
+
 .news_title {
 
 color: #221f1f;
@@ -219,9 +208,7 @@ text-align: justify;
     margin-right: 20px
 }
 
-.news__items{
-	margin-bottom: 56px;
-}
+
 .news__pics-avatar, .news__desc{
 	display: inline-block;
 }
@@ -254,6 +241,7 @@ text-align: justify;
     display: inline-block;
     vertical-align: middle;
     transition: color 0.4s ease;
+   
 }
 
 .nav__link:before {
@@ -272,7 +260,7 @@ text-align: justify;
     background: center center no-repeat;
 }
  .nav__icon--direction {
-     background-image: url('./img/main_icon.png');
+     background-image: url('./img/main_icon1.png');
  }
 
  .nav__icon--feed {
@@ -298,18 +286,6 @@ text-align: justify;
     color: #212121;
 }
 
-.nav__item--active .nav__icon--direction {
-    background-image: url('/img/main_icon1.png');
-}
-
-.nav__item--active .nav__icon--feed {
-    background-image: url('./img/feed_icon1.png');
-
-}
-
-.nav__item--active .nav__icon--plain {
-    background-image: url('/img/team_icon1.png');
-}
 .nav__item--active .nav__title {
     color:black;
 }
@@ -333,14 +309,21 @@ vertical-align: top;
 .news__pics, .news__items {
     display: inline-block;
 }
+.news__items {
+    border-bottom: solid #f5f5f5;
+    padding-top: 20px
+	
+}
+
+.news__items:last-child {
+	border-bottom: none
+}
 
 .pagination {    
 	width: 100%;    
 	text-align: center;
 }
-.pagination {
-	margin-bottom: 20px;
-}
+
 .pagination_pages-item {
 	display: inline-block;
 }
@@ -438,12 +421,19 @@ width: 250px;
 }
 
 .sosials {
-	vertical-align: top;
+	text-align: center;
+	vertical-align: middle;
+	
 }
+
+.sosials p {
+	font-size: 14px;
+    font-weight: 700;
+}
+
 
 .sosials_list-item {
 	background: #d2def3;
-	margin-right: 10px;
 	width: 20px;
     height: 20px;
 	overflow: hidden;
@@ -451,12 +441,10 @@ width: 250px;
 	text-align: center;
 	display: inline-block;
     vertical-align: middle;
+	margin-right: 5px
 		
 }
 
-hr {
-    width: 880px;
-    height: 2px;
-    background-color: #f5f5f5;
-    }
-
+.maincontent {
+	margin-bottom: 20px;
+}
