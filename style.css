@@ -310,7 +310,7 @@ vertical-align: top;
     display: inline-block;
 }
 .news__items {
-    border-bottom: solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
     padding-top: 20px
 	
 }
@@ -443,6 +443,9 @@ width: 250px;
     vertical-align: middle;
 	margin-right: 5px
 		
+}
+.sosials_list-item:last-child {
+	margin-right: 0 auto;
 }
 
 .maincontent {
