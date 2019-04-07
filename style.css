@@ -453,11 +453,15 @@ width: 250px;
 	text-align: center;
 	display: inline-block;
     vertical-align: middle;
-	margin-right: 5px
+    margin-right: 5px;
+    transform: translate(0%, -50%)
 		
 }
-.sosials_list-item:last-child {
-	margin-right: 0 auto;
+.sosials_vk-icon {
+	transform: translate(-5%, -20%)
+}
+.sosials_fb-icon {
+	transform: translate(0%,+10%)
 }
 
 .maincontent {
