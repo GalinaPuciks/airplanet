@@ -99,14 +99,17 @@ line-height: 38px;
 margin-bottom: 27px;
 }
 
-.benefits__standart-price, 
-.benefits__premium-price, 
-.benefits__lux-price {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 40px;
-
+.benefits__price li {
+    display: inline-block;  
 }
+
+.benefits__price {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 40px
+    
+}
+
 .benefits__standart-price, 
 .benefits__premium-price,
 .benefits__lux-price {
@@ -434,7 +437,6 @@ width: 250px;
 .sosials {
 	text-align: center;
     vertical-align: middle;
- 
 	
 }
 
