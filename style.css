@@ -76,7 +76,7 @@ img {
 
 
 
-.benefits__preview {
+.preview{
     position: relative;
 }
 
@@ -152,9 +152,18 @@ color: #212121;
 font-family: Roboto;
 font-size: 54px;
 font-weight: 400;
-width: 72px;
-height: 48px;
 display: inline-block;
+}
+.benefits__price img {
+	background: #4b73b5;
+	width: 20px;
+    height: 20px;
+	overflow: hidden;
+    border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+    vertical-align: middle;
+	padding: 20px
 }
 
 .benefits__standart-price:hover {
@@ -221,7 +230,7 @@ text-align: justify;
 .nav__title {
     display: inline-block;
     vertical-align: middle;
-    padding: 5px;
+   
 }
 .nav__icon {
 	vertical-align: middle;
