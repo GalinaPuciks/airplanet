@@ -411,6 +411,7 @@ width: 250px;
 	text-align: left;
     vertical-align: middle;
     width: 260px;
+    margin-bottom: 0;
 }
 
 .logo__footer-pic {
@@ -431,9 +432,19 @@ width: 250px;
 }
 
 .sosials__link {
+    display: block;    
+    position: relative;   
+    width: 20px;   
+    height: 20px;    
+    background-color: rgba(255, 255, 255, .7);   
+    transition: .3s;   
+    border-radius: 50%;
+}
+
+.sosials__icon {
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%)
 }
 
