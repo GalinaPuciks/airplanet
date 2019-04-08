@@ -110,9 +110,7 @@ margin-bottom: 27px;
     
 }
 
-.benefits__standart-price, 
-.benefits__premium-price,
-.benefits__lux-price {
+.benefits__item {
     width: 250px;
     height: 456px;
     border-radius: 5px;
@@ -122,9 +120,7 @@ margin-bottom: 27px;
 
 
 
-.benefits__standart-price, 
-.benefits__premium-price, 
-.benefits__lux-price {
+.benefits__item {
 width: 250px;
 height: 456px;
 color: #221f1f;
@@ -133,7 +129,7 @@ font-size: 18px;
 font-weight: 300;
 line-height: 30px;
 text-align: center;
-
+padding: 20px;
 }
 
 .benefits__subtitle-standart,
@@ -171,24 +167,15 @@ display: inline-block;
 	padding: 20px
 }
 
-.benefits__standart-price:hover {
-	border-radius: 5px;
-    border: 1px solid #e8e9ed;
-}
-.benefits__premium-price:hover {
-	border-radius: 5px;
-    border: 1px solid #e8e9ed;
-}
-.benefits__lux-price:hover {
+.benefits__item:hover {
 	border-radius: 5px;
     border: 1px solid #e8e9ed;
 }
 
-.benefits__standart-items li
-{
+.benefits__list {
 	list-style-type: disc;
 	list-style-position: inside;
-	text-align: left
+	text-align: left;
 }
 
 .benefits__desc-items li {
