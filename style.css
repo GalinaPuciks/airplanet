@@ -88,9 +88,7 @@ img {
     vertical-align: top;
 }
 
-.benefits__title {
-
-
+.title {
 color: #221f1f;
 font-family: Roboto;
 font-size: 49px;
@@ -99,7 +97,8 @@ line-height: 38px;
 margin-bottom: 27px;
 }
 
-.benefits__price li {
+
+.benefits__item {
     display: inline-block;  
 }
 
@@ -146,25 +145,31 @@ padding: 20px;
 }
 
 
-.benefits__standart-features,
- .benefits__premium-features, 
- .benefits__lux-features {
+.benefits__features {
 color: #212121;
 font-family: Roboto;
 font-size: 54px;
 font-weight: 400;
 display: inline-block;
 }
-.benefits__price img {
+
+.benefits__pics {
 	background: #4b73b5;
-	width: 20px;
-    height: 20px;
+	width: 70px;
+    height: 70px;
 	overflow: hidden;
     border-radius: 50%;
 	text-align: center;
 	display: inline-block;
     vertical-align: middle;
-	padding: 20px
+    position: relative;
+}
+
+.benefits__img {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .benefits__item:hover {
@@ -192,15 +197,7 @@ display: inline-block;
 
 
 
-.news_title {
 
-color: #221f1f;
-font-size: 49px;
-font-weight: 700;
-line-height: 38px;
-margin-bottom: 72px;
-text-align: justify;
-}
 .news__pics-avatar {
     width: 150px;
     height: 150px;
@@ -325,7 +322,7 @@ vertical-align: top;
 	text-align: center;
 }
 
-.pagination_pages-item {
+.pagination__pages-item {
 	display: inline-block;
 }
 .pagination__display {    
@@ -404,19 +401,19 @@ width: 250px;
 }
 
 .author,
-.logo_footer,
+.logo__footer,
 .sosials {
 	width: 33%;
 	display: inline-block;
 }
 
-.author_text {
+.author__text {
 	text-align: left;
     vertical-align: middle;
     width: 260px;
 }
 
-.logo_footer-pic {
+.logo__footer-pic {
 	text-align: center;
 	vertical-align: middle;
 }
@@ -430,11 +427,17 @@ width: 250px;
 .sosials p {
 	font-size: 14px;
     font-weight: 700;
-    margin-bottom: 0000
+    margin-bottom: 10px;
 }
 
+.sosials__link {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
 
-.sosials_list-item {
+.sosials__list-item {
 	background: #d2def3;
 	width: 20px;
     height: 20px;
@@ -447,15 +450,7 @@ width: 250px;
     position: relative;
 		
 }
-.sosials_vk-icon {
-	transform: translate(-5%, -20%)
-}
-.sosials_fb-icon {
-	transform: translate(0%,+10%)
-}
-.sosials_list-item:nth-child(5n){
-	margin-right: 0
-}
+
 .maincontent {
 	margin-bottom: 20px;
 }
