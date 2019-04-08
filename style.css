@@ -430,6 +430,7 @@ width: 250px;
 .sosials p {
 	font-size: 14px;
     font-weight: 700;
+    margin-bottom: 0000
 }
 
 
@@ -443,7 +444,7 @@ width: 250px;
 	display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
-    transform: translate(0%, -50%)
+    position: relative;
 		
 }
 .sosials_vk-icon {
