@@ -41,13 +41,8 @@ img {
     padding-bottom: 15px;
     
 }
-.logo {
-   display: inline-block;
-   
-}
 
 .main-contacts {
-    
     text-align: right;
   }
 
@@ -72,15 +67,13 @@ img {
 
 .sidebar {
     width: 15%;
+    margin-top: 10px;
 }
 .maincontent__container {
     display: flex;
     justify-content: space-between;
 
 }
-
-
-
 
 .preview {
     position: relative;
@@ -108,7 +101,6 @@ img {
 .nav__link {
     font-size: 19px;
     text-decoration: none;
-    display: inline-block;
     vertical-align: middle;
     transition: color 0.4s ease;
    
@@ -164,13 +156,11 @@ img {
     background-image: url('./img/team_icon1.png');
   }
 
-.nav__link:hover .nav__title {
+  .nav__link:hover .nav__title {
     color: #212121;
 }
 
-.nav__item--active .nav__title {
-    color:black;
-}
+
 
 .nav__title {
 
@@ -486,35 +476,6 @@ width: 250px;
 .news__pics {
     width: 30%;
 }
-.team__list-img {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 20px;
-    
-    opacity: 0.6;
-}
-.team__list-avatar {
-    background-color: #4b73b5; 
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.team__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap; 
-}
-
-.team__list-item {
-    width: 30%;
-    text-align: -webkit-center;
-    margin-bottom: 40px;
-}  
 
 .partners__list {
     display: flex;
@@ -609,6 +570,39 @@ width: 250px;
   display: flex;
 }
 
+.team__list-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+    opacity: 0.6;
+}
+
+
+.team__list-avatar {
+    background-color: #4b73b5; 
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap; 
+}
+
+.team__list-item {
+    width: 30%;
+    text-align: -webkit-center;
+    margin-bottom: 40px;
+}  
+
+
 .team__list-name {
     font-family: Roboto - Bold;
     font-size: 18px;
@@ -673,3 +667,19 @@ margin-top: 10px
   .form__textarea {
     resize: vertical;
   }
+
+  .pattern {
+      background: url(./img/slice.png) repeat;
+  } 
+
+.information {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    width: 82%;
+    padding: 47px;
+}
+
