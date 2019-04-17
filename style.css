@@ -587,6 +587,7 @@ width: 250px;
     height: 150px;
     overflow: hidden;
     border-radius: 50%;
+    position: relative;
 }
 
 .team__list {
@@ -623,6 +624,22 @@ margin: 0
 font-family: Roboto - Light;
 font-weight: 300;
 margin-top: 10px
+}
+
+.avatar__name {
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #ffffff;
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 21px;
+}
+
+.feeds__form {
+    padding-bottom: 60px
 }
 
 .form {
@@ -683,3 +700,121 @@ margin-top: 10px
     padding: 47px;
 }
 
+.form__button {
+width: 154px;
+height: 45px;
+background-color: #4b73b5;
+}
+
+.form__button {
+    border: none;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+
+.form__button-text:after {
+    content: '';
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    transition: background-image 0.4s ease; 
+
+}
+.form__button-text {
+    background-image: url(./img/fly.png);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.input {
+    width: 40px;
+   
+}
+
+.input__base {
+    display: flex
+}
+.form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    float: right
+}
+
+.form__textarea {
+    resize: vertical;
+}
+
+.feeds__date {
+    color: #656464;
+    font-family: Roboto - Light;
+    font-size: 14px;
+}
+
+.feeds__caption {
+font-family: Roboto - Bold;
+font-weight: 700;
+line-height: 21px;
+}
+
+.feeds__desc-text {
+    font-family: Roboto - Light;
+font-weight: 300;
+line-height: 30px;
+}
+
+.application {
+font-family: Roboto - Bold;
+font-weight: 700;
+text-decoration: underline;
+color: #fff
+}
+
+.main__phone {
+font-family: Roboto - Bold;
+font-weight: 700;
+text-decoration: none;
+color: #fff;
+}
+
+.promo {
+    margin-bottom: 60px;
+}
+
+label {
+    cursor: pointer;
+}
+input[type=radio] {
+        display: none;
+    }
+.input__base label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+}
+
+.input__base label:before {
+border-radius: 8px;
+    }
+
+input[type=radio]:checked  {
+content: "&#8226";
+color: #f3f3f3;
+font-size: 30px;
+text-align: center;
+line-height: 18px;
+        }
+        
+    
