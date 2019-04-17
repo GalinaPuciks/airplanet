@@ -809,12 +809,6 @@ input[type=radio] {
 border-radius: 8px;
     }
 
-input[type=radio]:checked  {
-content: "&#8226";
-color: #f3f3f3;
-font-size: 30px;
-text-align: center;
-line-height: 18px;
-        }
+
         
     
