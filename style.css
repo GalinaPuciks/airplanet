@@ -811,13 +811,15 @@ input[type=radio] {
 }
 
 .form__buttons, .form__block-title {
-    color: #221f1f;
+color: #221f1f;
 font-family: Roboto;
 font-size: 14px;
 font-weight: 300;
 }
 
-.radio__check {
+
+
+.radio__check-yes {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -825,35 +827,52 @@ font-weight: 300;
     position: relative;
 }
 
-.radio__check:before {
-    content: "";
-    width: 4px;
-    height: 4px;
-    background-color: #4b73b5;
-    border-radius: 50%;
-    border: 3px solid #4b73b5;
-    display: block;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-
-
-    .input:checked + .radio__check::before {   
-     content: "";   
-    width: 4px; 
-    height: 4px; 
-    background-color: #4b73b5; 
-    border-radius: 50%;
-    border: 3px solid #4b73b5; 
-    display: block;  
-    position: absolute; 
-    transform: translate(-50%, -50%); 
-    top: 50%; 
-    left: 50%;
+.input__yes:checked + .radio__check-yes::before {   
+content: "";   
+width: 4px; 
+height: 4px; 
+background-color: #4b73b5; 
+border-radius: 50%;
+border: 3px solid #4b73b5; 
+display: block;  
+position: absolute; 
+transform: translate(-50%, -50%); 
+top: 50%; 
+left: 50%;
 }  
 
-.input:checked + .radio__check {
+.input__yes:checked + .radio__check-yes {
+    border-color: #4b73b5;
+}
+
+
+
+.radio__check-no {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #c9c9c9;
+    position: relative;
+}
+
+
+
+
+.input__no:checked + .radio__check-no::before {   
+content: "";   
+width: 4px; 
+height: 4px; 
+background-color: #4b73b5; 
+border-radius: 50%;
+border: 3px solid #4b73b5; 
+display: block;  
+position: absolute; 
+transform: translate(-50%, -50%); 
+top: 50%; 
+left: 50%;
+}  
+
+.input__no:checked + .radio__check-no {
     border-color: #4b73b5;
 }
 
