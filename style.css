@@ -687,6 +687,9 @@ line-height: 21px;
 
   .pattern {
       background: url(./img/slice.png) repeat;
+      display: flex;
+      vertical-align: middle;
+      justify-content: center;
   } 
 
 .information {
@@ -695,9 +698,9 @@ line-height: 21px;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-    text-align: center;
     width: 82%;
     padding: 47px;
+    text-align: -webkit-left;
 }
 
 .form__button {
@@ -714,21 +717,37 @@ background-color: #4b73b5;
 
 
 .form__button-text:after {
-    content: '';
-    background-position: center center;
+    content: "";
     display: inline-block;
-    vertical-align: middle;
-    transition: background-image 0.4s ease; 
-
-}
-.form__button-text {
-    background-image: url(./img/fly.png);
+    width: 20px;
+    height: 20px;
+    background: url(./img/fly.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    color: #ffffff;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+
+.form__button-text {
+    color: #fff;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.form__button-text{
+    color: #fff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    direction: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  
 }
 
 .input {
@@ -787,13 +806,21 @@ color: #fff;
     margin-bottom: 60px;
 }
 
-label {
+label[class=radio__yes] {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+label[class=radio__no] {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
+
 input[type=radio] {
         display: none;
+        
     }
 
 
@@ -825,24 +852,29 @@ font-weight: 300;
     border-radius: 50%;
     border: 1px solid #c9c9c9;
     position: relative;
+    margin-right: 10px;
 }
 
 .input__yes:checked + .radio__check-yes::before {   
-content: "";   
-width: 4px; 
-height: 4px; 
-background-color: #4b73b5; 
-border-radius: 50%;
-border: 3px solid #4b73b5; 
-display: block;  
-position: absolute; 
-transform: translate(-50%, -50%); 
-top: 50%; 
-left: 50%;
-}  
+    content: "";   
+    width: 4px; 
+    height: 4px; 
+    background-color: #4b73b5; 
+    border-radius: 50%;
+    border: 3px solid #4b73b5; 
+    display: block;         
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    top: 50%; 
+    left: 50%;
+}
 
 .input__yes:checked + .radio__check-yes {
     border-color: #4b73b5;
+}
+
+.input__yes:checked ~ div.input__text-yes {
+    color: #1c5bc3;
 }
 
 
@@ -853,23 +885,32 @@ left: 50%;
     border-radius: 50%;
     border: 1px solid #c9c9c9;
     position: relative;
+    margin-right: 10px;
+}
+
+.pattern {
+   
+}
+.information {
+    width: 50%;
+    vertical-align: middle;
+    
 }
 
 
 
-
 .input__no:checked + .radio__check-no::before {   
-content: "";   
-width: 4px; 
-height: 4px; 
-background-color: #4b73b5; 
-border-radius: 50%;
-border: 3px solid #4b73b5; 
-display: block;  
-position: absolute; 
-transform: translate(-50%, -50%); 
-top: 50%; 
-left: 50%;
+    content: "";   
+    width: 4px; 
+    height: 4px; 
+    background-color: #4b73b5; 
+    border-radius: 50%;
+    border: 3px solid #4b73b5; 
+    display: block;  
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    top: 50%; 
+    left: 50%;
 }  
 
 .input__no:checked + .radio__check-no {
@@ -877,4 +918,6 @@ left: 50%;
 }
 
 
-
+.input__no:checked ~ div.input__text-no {
+    color: #1c5bc3;
+}
