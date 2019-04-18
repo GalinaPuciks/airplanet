@@ -742,6 +742,7 @@ background-color: #4b73b5;
 .form__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .label {
@@ -805,10 +806,31 @@ input[type=radio] {
     background-color: #fff;
 }
 
+
 .input__base label:before {
-border-radius: 8px;
+border-radius: 50%;
+
     }
 
+.input__text{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
 
-        
+.form__button {
+    vertical-align: middle
+}
+
+.form__buttons, .form__block-title {
+    color: #221f1f;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 300;
+}
+
+
+
+
+
     
