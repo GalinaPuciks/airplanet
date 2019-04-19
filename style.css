@@ -83,7 +83,7 @@ img {
 .nav__icon,
 .nav__title {
     display: inline-block;
-    vertical-align: middle;
+  
    
 }
 .nav__icon {
@@ -175,7 +175,6 @@ letter-spacing: 2.4px;
 
 .nav__icon, .nav__title{
 display: inline-block;
-vertical-align: top;
 }
 
 .title {
@@ -286,7 +285,15 @@ display: inline-block;
 }
 
 
-
+.news {
+    margin-bottom: 65px;
+}
+.news__items {
+    align-items: center;
+}
+.news__pics {
+    text-align: center;
+}
 
 .news__pics-avatar {
     width: 150px;
@@ -302,7 +309,6 @@ display: inline-block;
 }
 .news__desc{
 	width: 640px;
-   height: 165px;
 }
 
 
@@ -320,9 +326,31 @@ display: inline-block;
 	border-bottom: none
 }
 
+.news__date {
+    color: #656464;
+    font-family: Light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+
+}
+
+.news__caption {
+    font-family: Bold;
+    font-weight: 700;
+    line-height: 21px;
+   
+}
+
+.news__desc-text {
+    font-family: Light;
+    font-weight: 300;
+    line-height: 30px;
+}
 .pagination {    
 	width: 100%;    
-	text-align: center;
+    text-align: center;
+    margin-bottom: 62px;
 }
 
 .pagination__pages-item {
@@ -330,16 +358,15 @@ display: inline-block;
 }
 .pagination__display {    
 	display: inline-block;    
-	vertical-align: middle;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 .pagination__controlls {   
 	display: inline-block;    
-	vertical-align: middle;
 }
 
 .paginations__pages {    
 	display: inline-block;    
-	vertical-align: middle;
 }
 
 .pagination__link, 
@@ -369,7 +396,8 @@ line-height: 21px;
 
 .pagination__prev, 
 .pagination__next {
-	color:#221f1f;
+    color:#221f1f;
+    vertical-align: middle;
 }
 
 .pagination__prev, 
@@ -400,6 +428,7 @@ line-height: 18px;
 vertical-align: middle;
 text-align: center;
 width: 250px;
+margin-bottom: 13px;
 
 }
 
@@ -425,6 +454,7 @@ width: 250px;
 .sosials {
 	text-align: center;
     vertical-align: middle;
+    margin-bottom: 13px;
 	
 }
 
@@ -519,6 +549,10 @@ width: 250px;
     padding-top: 20px;
     display: inline-block;
 }
+
+.feeds__items:last-child {
+    border-bottom: none;
+}
 .feeds__desc {
 	width: 70%;
     vertical-align: top
@@ -530,6 +564,7 @@ width: 250px;
 .feeds__list{
     display: flex;
     flex-flow: column;
+    margin-bottom: 74px;
 }
 
 .breadcrumbs__item:after {
