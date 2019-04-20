@@ -23,47 +23,81 @@
         </header>
         <main class ="maincontent ">
             <div class="container maincontent__container">
-            <div class="sidebar">
-                    <ul class="nav">
-                            <li class="nav__item">
-                                <a href="./index.html" class="nav__link">
-                                <div class="nav__icon nav__icon--direction">
-                                </div>
-                                <div class="nav__title">
-                                    Главная
-                                </div>
-                            </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="./feeds.html" class="nav__link">
-                                <div class="nav__icon nav__icon--feed">
-                                </div>
-                                <div class= "nav__title">
-                                     Отзывы
-                                    </div>
-                            </a>  
-                            </li>
-                            <li class="nav__item">
-                                <a href="./about.html" class="nav__link">
-                                <div class="nav__icon nav__icon--plain">
-                                </div>
-                                <div class="nav__title">
-                                    Экипаж
-                                </div>
-                            </a>
-                                
-                            </li>
-                        </ul>
-            </div>
+            <aside class="sidebar">
+                    <section class= "promo">
+                            <div class="pattern">
+                                    <article class="information">
+                                         Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <a href="#" class="application"> заявку на сайте </a>  или же позвонить по номеру круглосуточной поддержки 
+                                         <a href="tel: +78000039210" class="main__phone"> 8(800)00-392-10</a>.
+                                    </article>
+                                 
+                            </div>
+                    </section>
+                    <div class="sosials sosials__new">
+                            <p>Наши социальные сети</p>
+                            <ul class="sosials__list">
+                                <li class="sosials__list-item">
+                                    <a href="#" class="sosials__link sosials__vk-link">
+                                        <img src="./img/vk1.png" class="sosials__icon sosials_vk-icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="sosials__list-item">
+                                    <a href="#" class="sosials__link sosials__fb-link">
+                                        <img src="./img/fb1.png" class="sosials__icon sosials__fb-icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="sosials__list-item">
+                                    <a href="#" class="sosials__link sosials__google-link">
+                                        <img src="./img/google1.png" class="sosials__icon sosials__google-icon" alt="">
+                                    </a>
+                                </li>
+                                <li class="sosials__list-item">
+                                    <a href="#" class="sosials__link sosials__twitt-link">
+                                        <img src="./img/twitter1.png" class="sosials__icon sosials__twitt-icon" alt="tweetter">
+                                    </a>
+                                </li>
+                                <li class=" sosials__list-item">
+                                    <a href="#" class="sosials__link sosials__tele-link">
+                                        <img src="./img/mail.png" class="sosials__icon sosials__tele-icon" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+            </aside>
             <div class="page-content">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item">
-                      <a href="./index.html" class="breadcrumbs__link">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item--active">
-                      <a href="#" class="breadcrumbs__link">Отзывы</a>
-                    </li>
-                </ul>
+                    <nav class="nav__list nav--horizontal">
+                            <ul class="nav">
+                                <li class="nav__item">
+                                        <a href="#" class="nav__link">
+                                    <div class="nav__icon nav__icon--direction">   
+                                    </div>
+                                    <div class="nav__title">
+                                        Главная
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="./feeds.html" class="nav__link">
+                                    <div class="nav__icon nav__icon--feed">
+                                    </div>
+                                    <div class= "nav__title">
+                                         Отзывы
+                                        </div>
+                                </a>  
+                                </li>
+                                <li class="nav__item">
+                                    <a href="./about.html" class="nav__link">
+                                    <div class="nav__icon nav__icon--plain">
+                                    </div>
+                                    <div class="nav__title">
+                                        Экипаж
+                                    </div>
+                                </a>
+                                    
+                                </li>
+                            </ul>
+                        </nav>
                 <h1 class="title"> Отзывы </h1>
                 <div class = "feeds">
                         <ul class="feeds__list">
@@ -158,7 +192,50 @@
                         </div>
                     
             </div>
-            
+            <section class="feeds__form form__container ">
+                    <div class="form">
+                            <form action="" class="form__tag">
+                              <div class="form__title">Оставить отзыв</div>
+                              <div class="form__row">
+                                <label class="form__block">
+                                  <div class="form__block-title">Ваше имя</div>
+                                  <input type="text" placeholder="Андрей" class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                  <div class="form__block-title">Ссылка на профиль VK</div>
+                                  <input type="text" placeholder="vk.com/example" class="form__input form-field">
+                                </label>
+                            </div>
+                              <div class="form__row">
+                                <label class="form__block">
+                                  <div class="form__block-title">Текст</div>
+                                  <textarea name="" class="form__textarea form-field"></textarea>
+                                </label>
+                              </div>
+                              <div class="form__buttons">
+                                    <div class="form__block-title">Отображать фото в отзыве?</div>
+                                    <div class="form__row">
+                                        <div class="input__base">
+                                            <label for="input__yes" class="radio__yes">
+                                                <input type="radio" class="input__yes" id= "input__yes" name="test">  
+                                                <div class="radio__check-yes"></div>
+                                                <div class="input__text-yes"> Да </div>
+                                            </label>
+                
+                                            <label for="input__no" class="radio__no">
+                                                <input type="radio" class="input__no" id= "input__no" name="test">
+                                                <div class="radio__check-no"></div>
+                                                <div class="input__text-no"> Нет </div>
+                                          </label>
+                                        </div>
+                                <button type="submit" class="form__button">
+                                    <div class="form__button-text">ОТПРАВИТЬ</div>
+                                </button>
+                            </div>
+                              </div>
+                            </form>
+                          </div>
+                        </section>
          
                     
                 
@@ -170,63 +247,6 @@
     
     </main>
 
-    <section class= "promo">
-    <div class="pattern">
-            <article class="information">
-                 Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <a href="#" class="application"> заявку на сайте </a>  или же позвонить по номеру круглосуточной поддержки 
-                 <a href="tel: +78000039210" class="main__phone"> 8(800)00-392-10</a>.
-            </article>
-         
-    </div>
-    </section>
-    
-    <section class="feeds__form container ">
-    <div class="form">
-            <form action="" class="form__tag">
-              <div class="form__title">Оставить отзыв</div>
-              <div class="form__row">
-                <label class="form__block">
-                  <div class="form__block-title">Ваше имя</div>
-                  <input type="text" placeholder="Андрей" class="form__input form-field">
-                </label>
-                <label class="form__block">
-                  <div class="form__block-title">Ссылка на профиль VK</div>
-                  <input type="text" placeholder="vk.com/example" class="form__input form-field">
-                </label>
-            </div>
-              <div class="form__row">
-                <label class="form__block">
-                  <div class="form__block-title">Текст</div>
-                  <textarea name="" class="form__textarea form-field"></textarea>
-                </label>
-              </div>
-              <div class="form__buttons">
-                    <div class="form__block-title">Отображать фото в отзыве?</div>
-                    <div class="form__row">
-                        <div class="input__base">
-                            <label for="input__yes" class="radio__yes">
-                                <input type="radio" class="input__yes" id= "input__yes" name="test">  
-                                <div class="radio__check-yes"></div>
-                                <div class="input__text-yes"> Да </div>
-                            </label>
-
-                            <label for="input__no" class="radio__no">
-                                <input type="radio" class="input__no" id= "input__no" name="test">
-                                <div class="radio__check-no"></div>
-                                <div class="input__text-no"> Нет </div>
-                          </label>
-                        </div>
-                <button type="submit" class="form__button">
-                    <div class="form__button-text">ОТПРАВИТЬ</div>
-                </button>
-            </div>
-              </div>
-            </form>
-          </div>
-        </section>
-    
-        
-    
         <footer class="footer">
             <div class="container footer__container">
             <div class="author">
@@ -240,36 +260,7 @@
             </a>
             </div>
             
-            <div class="sosials">
-                <p>Наши социальные сети</p>
-                <ul class="sosials__list">
-                    <li class="sosials__list-item">
-                        <a href="#" class="sosials__link sosials__vk-link">
-                            <img src="./img/vk1.png" class="sosials__icon sosials_vk-icon" alt="">
-                        </a>
-                    </li>
-                    <li class="sosials__list-item">
-                        <a href="#" class="sosials__link sosials__fb-link">
-                            <img src="./img/fb1.png" class="sosials__icon sosials__fb-icon" alt="">
-                        </a>
-                    </li>
-                    <li class="sosials__list-item">
-                        <a href="#" class="sosials__link sosials__google-link">
-                            <img src="./img/google1.png" class="sosials__icon sosials__google-icon" alt="">
-                        </a>
-                    </li>
-                    <li class="sosials__list-item">
-                        <a href="#" class="sosials__link sosials__twitt-link">
-                            <img src="./img/twitter1.png" class="sosials__icon sosials__twitt-icon" alt="tweetter">
-                        </a>
-                    </li>
-                    <li class=" sosials__list-item">
-                        <a href="#" class="sosials__link sosials__tele-link">
-                            <img src="./img/mail.png" class="sosials__icon sosials__tele-icon" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    
         </div>
         
         </footer>
