@@ -772,7 +772,7 @@ line-height: 21px;
   }
 
   .pattern {
-      background: url(./img/slice.png) repeat;
+      background: url(./img/pattern.png) center center #4b73b5;
       display: flex;
       vertical-align: middle;
       justify-content: center;
@@ -799,11 +799,22 @@ background-color: #4b73b5;
     width: 20px;
     height: 20px;
     background: url(./img/fly.png);
-    background-position: center center;
     background-repeat: no-repeat;
     margin-left: 10px;
-    vertical-align: middle;
-    
+    vertical-align: middle;  
+}
+
+.form__button:hover .form__button-text {
+    color: #4b73b5;
+} 
+
+.form__button:hover {
+    background: #fff;
+}
+
+.form__button:hover .form__button-text:after{
+    background: url(./img/index__icon.png);
+    background-repeat: no-repeat;
 }
 
 .form__button-text {
@@ -971,7 +982,6 @@ font-weight: 300;
     font-family: Light;
     font-weight: 300;
     color: #fff;
-    font-family: Roboto;
     line-height: 30px;
     text-align: center;
     font-size: 18px;
