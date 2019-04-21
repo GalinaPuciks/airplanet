@@ -95,6 +95,7 @@ img {
 .contacts__times:hover .contacts__dropdown {
     right: 0;
     opacity: 1;
+    margin-top: 10px<
 }
 
 .contacts__dropdown {
@@ -107,6 +108,7 @@ img {
     transition: opacity .4s;
     right: -9999px;
     box-shadow: 0 0 10px rgba(23, 59, 117, 0.55);
+    border-radius: 5px 0 5px 5px;
 }
 
 .contacts__dropdown:before {
@@ -119,6 +121,13 @@ img {
 
 }
 
+}
+.contacts__dropdown:before,
+.contacts__dropdown:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
 
 .page-content {
     width: 82%;
