@@ -95,7 +95,7 @@ img {
 .contacts__times:hover .contacts__dropdown {
     right: 0;
     opacity: 1;
-    margin-top: 10px<
+    margin-top: 5px;
 }
 
 .contacts__dropdown {
@@ -109,25 +109,23 @@ img {
     right: -9999px;
     box-shadow: 0 0 10px rgba(23, 59, 117, 0.55);
     border-radius: 5px 0 5px 5px;
+    
 }
 
 .contacts__dropdown:before {
+    content: "";
     border: 11px solid transparent;
     border-top-width: 0px;
     border-bottom-color: #fff;
-    top: 11px;
+    border-top-color: #fff;
+    top: -21%;
     height: 0;
     width: 0;
-
-}
-
-}
-.contacts__dropdown:before,
-.contacts__dropdown:after {
-    content: "";
-    display: block;
     position: absolute;
+    right: 10%;
 }
+
+
 
 .page-content {
     width: 82%;
