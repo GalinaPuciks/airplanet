@@ -61,6 +61,65 @@ img {
 
 }
 
+.contacts__days {
+    color: #1c5bc3;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contacts__worktimes {
+    color: #000;
+    font-size: 14px;
+    font-family: Light;
+    font-weight: 300;
+    
+
+}
+.contacts__times-trigger {
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
+.cotacts__times {
+    position: relative;
+    display: inline-block;
+
+}
+
+.contacts__times:hover .contacts__times-trigger {
+    color: white;
+    opacity: 1;
+}
+
+.contacts__times:hover .contacts__dropdown {
+    right: 0;
+    opacity: 1;
+}
+
+.contacts__dropdown {
+    position: absolute;
+    background: #fff;
+    border: 1px solid;
+    padding: 10px;
+    top: 100%;
+    opacity: 0;
+    transition: opacity .4s;
+    right: -9999px;
+    box-shadow: 0 0 10px rgba(23, 59, 117, 0.55);
+}
+
+.contacts__dropdown:before {
+    border: 11px solid transparent;
+    border-top-width: 0px;
+    border-bottom-color: #fff;
+    top: 11px;
+    height: 0;
+    width: 0;
+
+}
+
+
 .page-content {
     width: 82%;
 }
