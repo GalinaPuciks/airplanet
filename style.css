@@ -128,17 +128,34 @@ img {
 
 
 .page-content {
-    width: 82%;
+    width: 80%;
 }
 
 .sidebar {
-    width: 15%;
+    width: 19%;
     margin-top: 10px;
 }
 .maincontent__container {
     display: flex;
     justify-content: space-between;
 
+}
+
+.benefits__standart-desc {
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.benefits__standart-items {
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    display: inline-block;
 }
 
 .preview {
@@ -1045,14 +1062,18 @@ font-weight: 300;
 
 .information {
     vertical-align: middle;
-    font-family: Light;
+    font-family: Roboto;
     font-weight: 300;
     color: #fff;
     line-height: 30px;
     text-align: center;
     font-size: 18px;
+    padding: 10px;
 }
 
+.partners__list {
+    padding: 30px;
+}
 
 
 .input__no:checked + .radio__check-no::before {   
