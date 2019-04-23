@@ -725,7 +725,9 @@ margin-bottom: 13px;
 
 .partners__list-img {
   
-    opacity: .5
+    opacity: .5;
+    filter: grayscale(100%);
+
 }
 
 .partners__title {
