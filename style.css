@@ -44,8 +44,13 @@ img {
     
 }
 
-.main-contacts {
-    text-align: right;
+
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: right
+    
   }
 
 .main-contacts__phone {
@@ -81,6 +86,7 @@ img {
 .contacts__times-trigger {
     text-decoration: none;
     color: #c9c9c9;
+    margin-left: auto;
 }
 
 
@@ -88,6 +94,12 @@ img {
 .contacts__times-trigger:hover  {
     color: white;
     opacity: 1;
+}
+
+.contacts__times {
+    position: relative;
+    display: inline-block;
+
 }
 
 .contacts__times:hover .contacts__dropdown {
